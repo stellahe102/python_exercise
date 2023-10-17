@@ -23,7 +23,7 @@ def get_rainfall():
         rainfall = input('enter the amount of rainfall in millimeter here:')
         # put the city name and accumulated rainfall in the dictionary
         rain_dict[city_name] = rain_dict.get(city_name, 0) + int(rainfall)
-        rain_dict = dict(sorted(rain_dict.items()))
+    rain_dict = dict(sorted(rain_dict.items()))
     for key, value in rain_dict.items():
         output.append(key + ': ' + str(value))
         final_output = '\n'.join(output)
